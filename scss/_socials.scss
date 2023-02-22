@@ -1,0 +1,49 @@
+
+footer {
+    
+    position: absolute;
+    height: 80px;
+    // outline: 1px solid red;
+    bottom: 80px;
+    right: 0px;
+    top: 85%;
+    width: 240px;
+    // outline: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 20px;
+
+
+    .social-links {
+        // outline: 1px solid green;
+        width: 140px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+
+        .lni {
+            font-size: 28px;
+
+            &:hover {
+                transform: scale(1.1);
+                cursor: pointer;
+            }
+        }
+
+        .lni-facebook-original {
+            color: #1877f2;
+
+
+        }
+
+        .lni-instagram-fill {
+            color: #8a3ab9;
+        }
+
+        .lni-twitter-original {
+            color: #1DA1F2;
+
+        }
+    }
+}

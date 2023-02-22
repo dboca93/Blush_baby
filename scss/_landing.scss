@@ -1,0 +1,119 @@
+
+
+
+main {
+    min-height: 100vh;
+    // outline: 5px solid black; 
+  }
+  
+  .image-back {
+    width: 100%; 
+    height: 100vh; 
+    background: url(/dist/img/rad.jpg);
+    // background-position-x: -80px; 
+    background-position-y: center;  
+    background-repeat: no-repeat;
+    background-size: cover; 
+    display: flex; 
+    flex-direction: column;
+  }
+  
+  header { 
+    height: 50px; 
+      width: 100%; 
+      margin-top: 50x; 
+    /*   outline: 1px solid white; */
+    }
+
+    nav {
+      outline: 1px solid lightgray; 
+      padding-top: 7px; 
+      padding-bottom: 5px;
+      background-color: whitesmoke;
+      display: flex; 
+      align-items: center; 
+      justify-content: space-between; 
+      width: 100%; 
+      height: 50px; 
+    /*   outline: 10px solid green;  */
+      color: white; 
+
+
+
+      .blas-cart {
+        border-radius: 9px;
+        border: none;
+        outline: none;
+        background-color: lightpink;
+        margin-right: 50px; 
+
+        i {
+          // border: 2px solid pink; 
+          border-radius: 9px;
+          
+        }
+      }
+
+      .hasb {
+        width: 118.567px; 
+        padding-left: 0;
+        padding-right: 0; 
+        text-align: center;
+        border: 2px solid pink; 
+        border-radius: 10px;
+      }
+
+      li {
+        // outline: 2px solid pink; 
+        // max-width: 118.567px; 
+        padding: 8px 15px 4px 15px; 
+        display: inline-block; 
+        color: black;
+        font-family: 'Abhaya Libre Medium';
+        text-transform: uppercase;
+        font-size: 18px;
+    } /* li closing bracket*/
+
+    .clash {
+      outline: none; 
+      padding: 0;
+       
+      &:hover {
+        width: 118.567px;
+        border-radius: 15px 15px 0 0;
+      }
+
+      .special:hover {
+        border-radius: 15px 15px 0 0;
+      }
+    }
+
+    li:not(.logo):hover {
+      background-color: pink;
+      cursor: pointer; 
+      max-width: 118.567px; 
+
+  }
+
+    .home {
+      margin-left: 50px; 
+    }
+
+    .contact {
+      margin-right: 50px;
+    }
+
+    .logo {
+      outline: none; 
+      font-size: 36px; 
+      letter-spacing: .5cm; 
+      text-indent: .2cm;
+      font-weight: 500;
+    }
+
+
+
+    } /* nav closing bracket*/
+
+
+

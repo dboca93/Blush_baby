@@ -1,0 +1,64 @@
+
+
+.hamburger:hover {
+    cursor: pointer;
+}
+
+
+.hidden-menu {
+    display: none;
+    position: absolute; 
+    top: 0; 
+    bottom: 0; 
+    width: 100vw; 
+    height: 100vh;
+
+    background-color: pink;
+
+    i {
+        position: absolute;
+        color: black;
+        top: 20px;
+        left: 20px;
+        transform: scale(1.4);
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+
+    .absolute-inner {
+        position: fixed;
+        left: 49%;
+        top: 48%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+
+    }
+
+    a {
+        font-size: 22px;
+        text-decoration: none; 
+        text-transform: uppercase;
+        color: black;
+        letter-spacing: .1cm;
+        text-indent: .1cm;
+    }
+
+    a:hover {
+        text-decoration: underline;
+        // transform: scale(1.2);
+    }
+
+    a:active, a:after {
+        color: white;
+    }
+
+    a:nth-child(2){
+        margin: 40px;
+    }
+}

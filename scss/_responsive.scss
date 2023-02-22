@@ -1,0 +1,57 @@
+
+/* cancel out the icons on larger screens*/
+
+@media only screen and (min-width: 740px) {
+    .hamburger, .cart {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 740px) {
+    .hamburger, .cart {
+        color: black;
+        // outline: 4px solid red; ;
+    }
+
+    .image-back {
+    background-position-x: -180px; 
+    min-height: 600px; 
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .logo {
+            letter-spacing: 0cm;
+            text-indent: 0cm;
+        }
+
+        
+    .products, .dropdown {
+        display: none; 
+    }
+    }
+
+    .lni {
+        font-size: 20px;
+    }
+
+    .hamburger {
+        margin-left: 20px;
+        margin-right: auto; 
+    }
+
+    .cart {
+        margin-right: 20px; 
+        margin-left: auto; 
+    }
+
+ 
+
+    li:not(.logo) {
+        display: none;
+    }
+
+}

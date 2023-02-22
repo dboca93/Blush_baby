@@ -1,0 +1,354 @@
+main {
+  min-height: 100vh;
+}
+
+.image-back {
+  width: 100%;
+  height: 100vh;
+  background: url(/dist/img/rad.jpg);
+  background-position-y: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  height: 50px;
+  width: 100%;
+  margin-top: 50x;
+  /*   outline: 1px solid white; */
+}
+
+nav {
+  outline: 1px solid lightgray;
+  padding-top: 7px;
+  padding-bottom: 5px;
+  background-color: whitesmoke;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 50px;
+  /*   outline: 10px solid green;  */
+  color: white;
+  /* li closing bracket*/
+}
+nav .blas-cart {
+  border-radius: 9px;
+  border: none;
+  outline: none;
+  background-color: lightpink;
+  margin-right: 50px;
+}
+nav .blas-cart i {
+  border-radius: 9px;
+}
+nav .hasb {
+  width: 118.567px;
+  padding-left: 0;
+  padding-right: 0;
+  text-align: center;
+  border: 2px solid pink;
+  border-radius: 10px;
+}
+nav li {
+  padding: 8px 15px 4px 15px;
+  display: inline-block;
+  color: black;
+  font-family: "Abhaya Libre Medium";
+  text-transform: uppercase;
+  font-size: 18px;
+}
+nav .clash {
+  outline: none;
+  padding: 0;
+}
+nav .clash:hover {
+  width: 118.567px;
+  border-radius: 15px 15px 0 0;
+}
+nav .clash .special:hover {
+  border-radius: 15px 15px 0 0;
+}
+nav li:not(.logo):hover {
+  background-color: pink;
+  cursor: pointer;
+  max-width: 118.567px;
+}
+nav .home {
+  margin-left: 50px;
+}
+nav .contact {
+  margin-right: 50px;
+}
+nav .logo {
+  outline: none;
+  font-size: 36px;
+  letter-spacing: 0.5cm;
+  text-indent: 0.2cm;
+  font-weight: 500;
+}
+
+/* nav closing bracket*/
+/* cancel out the icons on larger screens*/
+@media only screen and (min-width: 740px) {
+  .hamburger, .cart {
+    display: none;
+  }
+}
+@media only screen and (max-width: 740px) {
+  .hamburger, .cart {
+    color: black;
+  }
+  .image-back {
+    background-position-x: -180px;
+    min-height: 600px;
+  }
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  nav .logo {
+    letter-spacing: 0cm;
+    text-indent: 0cm;
+  }
+  nav .products, nav .dropdown {
+    display: none;
+  }
+  .lni {
+    font-size: 20px;
+  }
+  .hamburger {
+    margin-left: 20px;
+    margin-right: auto;
+  }
+  .cart {
+    margin-right: 20px;
+    margin-left: auto;
+  }
+  li:not(.logo) {
+    display: none;
+  }
+}
+.stores .store-max a:nth-child(1):hover {
+  border-radius: 15px 15px 0 0;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  margin-left: 50px;
+}
+.dropdown .dropbtn {
+  background-color: whitesmoke;
+  color: black;
+  font-family: "Abhaya Libre Medium";
+  padding: 8px 15px 4px 15px;
+  border: 2px solid pink;
+  border-radius: 10px;
+  font-size: 18px;
+  text-transform: uppercase;
+  max-width: 118.567px;
+}
+.dropdown .dropbtn:hover {
+  cursor: pointer;
+  background-color: pink;
+}
+.dropdown .dropdown-content {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  max-width: 118.567px;
+  background-color: #f1f1f1;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.8);
+  border-radius: 15px 15px 15px 15px;
+}
+.dropdown .dropdown-content .lock:hover {
+  border-radius: 0 0 15px 15px;
+}
+.dropdown .dropdown-content a {
+  color: black;
+  display: block;
+  text-align: center;
+  padding: 30px 0px;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 118.567px;
+}
+.dropdown .dropdown-content a:nth-child(5):hover {
+  border-radius: 0 0 15px 15px;
+}
+.dropdown .dropdown-content a:hover {
+  background-color: pink;
+  cursor: pointer;
+}
+.dropdown .dropdown-content .special {
+  font-size: 16px;
+  width: 118.567px;
+}
+.dropdown .dropdown-content .special:hover {
+  width: 118.567px;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+  cursor: pointer;
+  background-color: whitesmoke;
+}
+
+nav .stores {
+  margin-left: 0;
+}
+nav .stores .store-max, nav .stores .shop {
+  min-width: 118.567px;
+}
+nav .stores .store-max .split-word, nav .stores .shop .split-word {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: black;
+}
+
+footer {
+  position: absolute;
+  height: 80px;
+  bottom: 80px;
+  right: 0px;
+  top: 85%;
+  width: 240px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 20px;
+}
+footer .social-links {
+  width: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+footer .social-links .lni {
+  font-size: 28px;
+}
+footer .social-links .lni:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+footer .social-links .lni-facebook-original {
+  color: #1877f2;
+}
+footer .social-links .lni-instagram-fill {
+  color: #8a3ab9;
+}
+footer .social-links .lni-twitter-original {
+  color: #1DA1F2;
+}
+
+/* 1. hide the submenu
+
+2. when foundation is hovered over, get it to shoot out on the right
+
+
+*/
+.submenu {
+  display: none;
+  background-color: whitesmoke;
+}
+.submenu li a {
+  font-size: 16px;
+  padding: 15px 0px;
+}
+
+nav .dropdown .dropdown-content .clash:hover .submenu {
+  display: block;
+  position: absolute;
+  left: 119px;
+  top: 1px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.8);
+  border-radius: 15px;
+}
+nav .dropdown .dropdown-content .clash:hover .submenu li {
+  outline: none;
+}
+nav .dropdown .dropdown-content .clash:hover .submenu li:hover {
+  background-color: lightpink;
+}
+nav .dropdown .dropdown-content .clash:hover .submenu li:nth-child(1):hover {
+  border-radius: 15px 15px 0 0;
+}
+nav .dropdown .dropdown-content .clash:hover .submenu li:nth-child(3):hover {
+  border-radius: 0 0 15px 15px;
+}
+nav .dropdown .dropdown-content .clash:hover .submenu li:nth-child(2) {
+  border-top: 2px solid pink;
+  border-bottom: 2px solid pink;
+}
+nav .dropdown .dropdown-content .clash:hover .submenu li a {
+  padding: 15px 0;
+}
+nav .dropdown .dropdown-content .clash:hover .submenu li a:hover {
+  background-color: lightpink;
+}
+
+/* nav close*/
+.hamburger:hover {
+  cursor: pointer;
+}
+
+.hidden-menu {
+  display: none;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: pink;
+}
+.hidden-menu i {
+  position: absolute;
+  color: black;
+  top: 20px;
+  left: 20px;
+  transform: scale(1.4);
+}
+.hidden-menu i:hover {
+  cursor: pointer;
+}
+.hidden-menu .absolute-inner {
+  position: fixed;
+  left: 49%;
+  top: 48%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.hidden-menu a {
+  font-size: 22px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+  letter-spacing: 0.1cm;
+  text-indent: 0.1cm;
+}
+.hidden-menu a:hover {
+  text-decoration: underline;
+}
+.hidden-menu a:active, .hidden-menu a:after {
+  color: white;
+}
+.hidden-menu a:nth-child(2) {
+  margin: 40px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Abhaya Libre Medium";
+}/*# sourceMappingURL=main.css.map */
